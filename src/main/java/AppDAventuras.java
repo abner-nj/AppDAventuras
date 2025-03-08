@@ -1,6 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
 
 /**
  *
@@ -19,16 +17,19 @@ public class AppDAventuras {
         
         //muestra todas la misiones
         diario.mostrarMisiones();
-        System.out.println("");
         
         //busca una mision
         System.out.println("¿Exploró la mazmorra?: " + diario.buscarMision("Explorar a la mazmorra"));
         System.out.println("");
         //Elimina la ultima mision
         diario.eliminarMision();
-        System.out.println("");
         
         //muestra las misiones 
         diario.mostrarMisiones();
+        
+        diario.editarMision("Salvar a la princesa", "unirse a un gremio");
+        
+        diario.mostrarMisiones();
+        
     }
 }
